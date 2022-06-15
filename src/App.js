@@ -49,7 +49,7 @@ function App() {
       }
       case "Relevance": {
         seFilterBy("Relevance");
-        data.sort((a, b) => a.id - b.id);
+        data.sort((a, b) => b.id - a.id);
         setData([...data])
         break;
       }
